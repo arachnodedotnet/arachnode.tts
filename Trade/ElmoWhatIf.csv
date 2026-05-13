@@ -1,0 +1,214 @@
+TradeSignalId,Name,Symbol,OptionsChain,GoodParsedText,BidInitial,AskInitial,FinalLimitPrice,InstrumentType,TradeSide,PositionEffect,OptionType,UnoReceivedDt,StrategyType,PlatformType,CaptureProtocol
+16,Paradigm Mastermind Group,GDDY,NULL,NULL,212.01,213.6,213.62,Stock,BUY,ToOpen,None,2/3/25 4:06 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,GDDY250221C00215000,NULL,8.1,8.5,8.5,Option,BUY,ToOpen,CALL,2/3/25 4:06 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,GDDY,NULL,NULL,208,212.5,212.5,Stock,BUY,ToOpen,None,2/5/25 8:23 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,GDDY250221C002150000,NULL,0,0,0,Option,BUY,ToOpen,CALL,2/5/25 8:23 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,GDDY250221C002150000,NULL,0,0,0,Option,BUY,ToOpen,CALL,2/5/25 8:44 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,GDDY,NULL,NULL,208,212.5,212.5,Stock,BUY,ToOpen,None,2/5/25 9:25 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,GDDY250221C002150000,NULL,0,0,0,Option,BUY,ToOpen,CALL,2/5/25 9:25 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,GDDY,NULL,NULL,211.91,212.04,212.06,Stock,BUY,ToOpen,None,2/7/25 12:28 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,GDDY250221C002150000,NULL,0,0,0,Option,BUY,ToOpen,CALL,2/7/25 12:28 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,GDDY,NULL,NULL,209.82,211.95,211.97,Stock,BUY,ToOpen,None,2/7/25 2:59 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,GDDY25022100215000,NULL,0,0,0,Option,BUY,ToOpen,CALL,2/7/25 2:59 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,GDDY,NULL,NULL,209.82,211.95,211.97,Stock,BUY,ToOpen,None,2/7/25 3:13 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,GDDY250221C00215000,NULL,6.8,7.3,7.3,Option,BUY,ToOpen,CALL,2/7/25 3:14 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,GDDY,NULL,NULL,209.82,211.95,211.97,Stock,BUY,ToOpen,None,2/7/25 3:20 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,GDDY250221C00215000,NULL,6.8,7.3,7.3,Option,BUY,ToOpen,CALL,2/7/25 3:21 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,GDDY,NULL,NULL,209.82,211.95,211.97,Stock,BUY,ToOpen,None,2/7/25 3:35 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,GDDY250221C00215000,NULL,6.8,7.3,7.3,Option,BUY,ToOpen,CALL,2/7/25 3:36 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,GDDY,NULL,NULL,209.82,211.95,211.97,Stock,BUY,ToOpen,None,2/8/25 6:10 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,GDDY250221C00215000,NULL,6.8,7.3,7.3,Option,BUY,ToOpen,CALL,2/8/25 6:11 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+19,The Income Alliance,BABA,BABA250417C00100000,NULL,18.2,18.4,18.4,Option,BUY,ToOpen,CALL,2/11/25 7:42 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,GDDY,NULL,NULL,201.1,206.5,206.5,Stock,BUY,ToOpen,None,2/11/25 2:40 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,GDDY,NULL,NULL,201.1,208.09,208.11,Stock,BUY,ToOpen,None,2/11/25 4:34 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,GDDY,NULL,NULL,201,207.26,207.28,Stock,BUY,ToOpen,None,2/11/25 4:53 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+17,Microcap Millionaire,GDDY,NULL,NULL,204.8,208.4,208.5,Stock,BUY,ToOpen,None,2/12/25 3:10 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+17,Microcap Millionaire,NULL,GDDY250221C00215000,NULL,4.2,4.8,4.9,Option,BUY,ToOpen,CALL,2/12/25 3:10 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+17,Microcap Millionaire,NULL,GDDY250221C00215000,NULL,4.2,4.8,4.9,Option,BUY,ToOpen,CALL,2/12/25 3:33 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+17,Microcap Millionaire,NULL,GDDY250221C00215000,NULL,4.2,4.8,4.9,Option,BUY,ToOpen,CALL,2/12/25 3:44 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+17,Microcap Millionaire,NULL,GDDY250221C00215000,NULL,4.2,4.8,4.9,Option,BUY,ToOpen,CALL,2/12/25 3:50 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+17,Microcap Millionaire,GDDY,NULL,NULL,208.6,208.84,198.417,Stock,BUY,ToOpen,None,2/13/25 9:17 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+17,Microcap Millionaire,NULL,GDDY250221C00215000,NULL,4.7,5,4.845,Option,BUY,ToOpen,CALL,2/13/25 9:17 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+17,Microcap Millionaire,NULL,GDDY250221C00215000,NULL,4.8,5.2,5.035,Option,BUY,ToOpen,CALL,2/13/25 10:58 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+17,Microcap Millionaire,NULL,GDDY250221C00215000,NULL,5.5,5.8,5.605,Option,BUY,ToOpen,CALL,2/13/25 11:31 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+13,NINGI Research,ODD,NULL,NULL,46.49,46.65,48.8145,Stock,SELL,ToOpen,Unknown,3/17/25 9:44 AM,StockActivistShort,Wordpress,RSS
+18,Altuchers True Alpha,MRVL,MRVL250620C00060000,NULL,14.5,14.7,13.965,Option,BUY,ToOpen,CALL,3/17/25 11:29 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+18,Altuchers True Alpha,MRVL,MRVL250417C00075000 ,NULL,2.52,2.55,2.4415,Option,BUY,ToOpen,CALL,3/17/25 11:29 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+13,NINGI Research,ODD,NULL,NULL,45.19,45.43,47.376,Stock,SELL,ToOpen,Unknown,3/18/25 8:28 AM,StockActivistShort,Wordpress,RSS
+13,NINGI Research,ODD,NULL,NULL,45.09,45.42,47.271,Stock,SELL,ToOpen,Unknown,3/18/25 8:33 AM,StockActivistShort,Wordpress,RSS
+17,Microcap Millionaire,GDDY,NULL,NULL,178.12,178.46,169.5655,Stock,BUY,ToOpen,None,3/18/25 8:44 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+13,NINGI Research,ODD,NULL,NULL,43.77,44.14,45.885,Stock,SELL,ToOpen,Unknown,3/19/25 11:30 AM,StockActivistShort,Wordpress,RSS
+22,Muddy Waters,FTAI,NULL,NULL,117,118,122.85,Stock,SELL,ToOpen,Unknown,3/25/25 8:54 PM,StockActivistShort,Wordpress,RSS
+22,Muddy Waters,FTAI,NULL,NULL,114.4,115.05,120.12,Stock,SELL,ToOpen,Unknown,3/26/25 8:01 AM,StockActivistShort,Wordpress,RSS
+25,Blue Orca,,NULL,NULL,0,0,0.0525,Stock,SELL,ToOpen,Unknown,3/26/25 10:46 AM,StockActivistShort,Wordpress,JSON
+33,The Bear Cave,APP,NULL,NULL,274.3,274.67,287.973,Stock,SELL,ToOpen,Unknown,4/1/25 10:27 AM,StockActivistShort,Substack,WebScrapeEmbeddedJs
+13,NINGI Research,ODD,NULL,NULL,44.05,44.25,43.95,Stock,SELL,ToOpen,Unknown,4/1/25 11:22 AM,StockActivistShort,Wordpress,RSS
+33,The Bear Cave,KLC,NULL,NULL,11.51,11.57,11.47,Stock,SELL,ToOpen,Unknown,4/3/25 7:31 AM,StockActivistShort,Substack,WebScrapeEmbeddedJs
+19,The Income Alliance,IBM,IBM250516C00200000,NULL,31,32.2,32,Option,BUY,ToOpen,CALL,4/7/25 10:32 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+19,The Income Alliance,GLD,GLD250516C00265000,NULL,0,0,0.02,Option,BUY,ToOpen,CALL,4/8/25 11:55 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,CTRI,NULL,NULL,16.26,16.4,16.43,Stock,BUY,ToOpen,None,4/9/25 10:31 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+19,The Income Alliance,GLD,GLD250516C00265000,NULL,0,0,0.02,Option,BUY,ToOpen,CALL,4/10/25 9:51 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+20,Ray Blancos Catalyst Trader,CYBN,NULL,NULL,5.22,5.39,5.42,Stock,BUY,ToOpen,None,4/10/25 11:56 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+19,The Income Alliance,CVNA,CVNA250516P00230000,NULL,39.05,41.55,41.6,Option,BUY,ToOpen,PUT,4/14/25 10:23 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+17,Microcap Millionaire,USAR,NULL,NULL,12.9,13.33,13.36,Stock,BUY,ToOpen,None,4/15/25 7:10 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+19,The Income Alliance,EFX,EFX250516P00250000,NULL,25.8,28.5,28.5,Option,BUY,ToOpen,PUT,4/15/25 11:30 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+33,The Bear Cave,TPVG,NULL,NULL,5.78,5.8,5.73,Stock,SELL,ToOpen,Unknown,4/17/25 7:31 AM,StockActivistShort,Substack,WebScrapeEmbeddedJs
+19,The Income Alliance,GLD,GLD250620C00305000,NULL,0,0,0.02,Option,BUY,ToOpen,CALL,4/22/25 7:55 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+18,Altuchers True Alpha,PLTR,PLTR250620C00120000 ,NULL,7.35,7.5,7.55,Option,BUY,ToOpen,CALL,4/24/25 9:08 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,AMKR,NULL,NULL,17.22,17.23,17.24,Stock,BUY,ToOpen,None,4/30/25 11:26 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,TTI,NULL,NULL,3.43,3.44,3.45,Stock,BUY,ToOpen,None,6/11/25 7:36 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+20,Ray Blancos Catalyst Trader,GLXY,NULL,NULL,19.44,19.5,19.52,Stock,BUY,ToOpen,None,6/12/25 7:16 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+18,Altuchers True Alpha,SLAB,NULL,NULL,140.37,140.62,6,Stock,BUY,ToOpen,None,6/12/25 11:11 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+18,Altuchers True Alpha,VRT,VRT251219C00100000,NULL,30.45,30.85,30.9,Option,BUY,ToOpen,CALL,6/18/25 12:09 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+19,The Income Alliance,TSLA,TSLA250815P00350000,NULL,48.25,48.45,48.5,Option,BUY,ToOpen,PUT,6/20/25 9:11 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+17,Microcap Millionaire,NVTS,NULL,NULL,6.76,6.79,6.8,Stock,BUY,ToOpen,None,6/23/25 6:30 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+17,Microcap Millionaire,NULL,NVTS250718C00007000,NULL,0.1,1.9,1.95,Option,BUY,ToOpen,CALL,6/23/25 6:30 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+19,The Income Alliance,TWLO,TWLO250815C00105000,NULL,20,20.25,20.3,Option,BUY,ToOpen,CALL,6/24/25 11:27 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,OSCR,NULL,NULL,16.91,16.92,16.93,Stock,BUY,ToOpen,None,7/2/25 11:10 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,OSCR250711C00017000,NULL,0.95,1.05,1.05,Option,BUY,ToOpen,CALL,7/2/25 11:10 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,OSCR250711C00016500,NULL,1.2,1.25,1.3,Option,BUY,ToOpen,CALL,7/2/25 11:10 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+20,Ray Blancos Catalyst Trader,RVMD,NULL,NULL,37,39.7,39.7,Stock,BUY,ToOpen,None,7/3/25 6:28 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+20,Ray Blancos Catalyst Trader,NULL,RVMD250718C00040000,NULL,0,0,0,Option,BUY,ToOpen,CALL,7/3/25 6:28 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+20,Ray Blancos Catalyst Trader,NULL,RVMD250718C00039000,NULL,0,0,0,Option,BUY,ToOpen,CALL,7/3/25 6:28 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+19,The Income Alliance,LULU,LULU250919P00250000,NULL,28.8,29.85,29.9,Option,BUY,ToOpen,PUT,7/15/25 7:10 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+18,Altuchers True Alpha,QBTS,QBTS251017C00012000,NULL,4.85,4.95,5,Option,BUY,ToOpen,CALL,7/15/25 10:48 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+18,Altuchers True Alpha,QBTS,QBTS251017C00025000,NULL,1.03,1.06,1.08,Option,BUY,ToOpen,CALL,7/15/25 10:48 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+19,The Income Alliance,CSCO,CSCO250919C00062500,NULL,6.9,7,7,Option,BUY,ToOpen,CALL,7/17/25 8:34 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,TLN,NULL,NULL,323.1,323.5,110,Stock,BUY,ToOpen,None,7/18/25 9:56 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,NULL,TLN250725C00325000,NULL,13.2,14.6,14.6,Option,BUY,ToOpen,CALL,7/18/25 9:56 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,PWR,NULL,NULL,401.46,402.23,100,Stock,BUY,ToOpen,None,7/18/25 9:56 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,NULL,PWR250815C00400000,NULL,18.3,19.2,19.2,Option,BUY,ToOpen,CALL,7/18/25 9:56 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,PLMR,NULL,NULL,134.12,134.38,134.39,Stock,BUY,ToOpen,None,7/23/25 8:59 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,NULL,PLMR250815C00135000,NULL,4,8.5,8.5,Option,BUY,ToOpen,CALL,7/23/25 8:59 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+20,Ray Blancos Catalyst Trader,SANA,NULL,NULL,5.11,5.12,5.14,Stock,BUY,ToOpen,None,7/24/25 11:19 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+20,Ray Blancos Catalyst Trader,NULL,SANA250815C00005000,NULL,0.55,0.65,0.65,Option,BUY,ToOpen,CALL,7/24/25 11:19 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+18,Altuchers True Alpha,IOT,NULL,NULL,39.87,39.89,1.55,Stock,BUY,ToOpen,None,7/28/25 7:57 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+18,Altuchers True Alpha,NULL,IOT250801C00040000,NULL,0.75,0.85,0.85,Option,BUY,ToOpen,CALL,7/28/25 7:57 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+18,Altuchers True Alpha,NULL,IOT250801C00039000,NULL,1.25,1.5,1.55,Option,BUY,ToOpen,CALL,7/28/25 7:57 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,NVDA,NVDA251219P00145000,NULL,4.95,5,5.05,Option,BUY,ToOpen,PUT,7/30/25 6:49 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+36,Strategic Intelligence,RGLD,NULL,NULL,153.24,153.67,153.67,Stock,BUY,ToOpen,None,7/31/25 6:45 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,PM,NULL,NULL,166.31,166.5,166.51,Stock,BUY,ToOpen,None,8/6/25 7:27 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,NULL,PM250815C00167500,NULL,1.9,2.1,2.15,Option,BUY,ToOpen,CALL,8/6/25 7:27 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,NULL,PM250815C00165000,NULL,3.3,3.5,3.5,Option,BUY,ToOpen,CALL,8/6/25 7:27 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group, FLR,NULL,NULL,0,0,0.01,Stock,BUY,ToOpen,None,8/7/25 9:00 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,HNRG,NULL,NULL,18.63,18.76,18.77,Stock,BUY,ToOpen,None,8/7/25 9:00 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,HNRG250815C00019000,NULL,0,0,0,Option,BUY,ToOpen,CALL,8/7/25 9:00 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,USAR,NULL,NULL,13.37,13.4,13.41,Stock,BUY,ToOpen,None,8/7/25 9:00 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,USAR250815C00013500,NULL,1,1.25,1.3,Option,BUY,ToOpen,CALL,8/7/25 9:00 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,USAR250815C00013000,NULL,1.15,1.4,1.45,Option,BUY,ToOpen,CALL,8/7/25 9:00 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,KRKNF,NULL,NULL,0,0,0.01,Stock,BUY,ToOpen,None,8/7/25 9:00 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,SYM,NULL,NULL,53.67,53.87,53.88,Stock,BUY,ToOpen,None,8/7/25 9:00 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,SYM250815C00054000,NULL,2.4,2.65,2.7,Option,BUY,ToOpen,CALL,8/7/25 9:00 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,SYM250815C00052500,NULL,3.2,3.5,3.5,Option,BUY,ToOpen,CALL,8/7/25 9:00 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+19,The Income Alliance,COF,COF251017P00230000,NULL,22.3,23.1,23.1,Option,BUY,ToOpen,PUT,8/8/25 7:12 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,USAR,USAR260320C00020000,NULL,4,4.8,4.8,Option,BUY,ToOpen,CALL,8/12/25 11:35 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,FTNT,NULL,NULL,78.89,78.93,78.94,Stock,BUY,ToOpen,None,8/13/25 6:57 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,NULL,FTNT250822C00079000,NULL,1.59,1.68,1.69,Option,BUY,ToOpen,CALL,8/13/25 6:57 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,NULL,FTNT250822C00078500,NULL,1.85,2,2.05,Option,BUY,ToOpen,CALL,8/13/25 6:57 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,TPL,NULL,NULL,855.36,860.76,860.77,Stock,BUY,ToOpen,None,8/13/25 9:20 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,TPL250919C00870000,NULL,36.8,45,45,Option,BUY,ToOpen,CALL,8/13/25 9:20 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,TPL250919C00840000,NULL,52.8,60,60,Option,BUY,ToOpen,CALL,8/13/25 9:20 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+19,The Income Alliance,NOW,NOW251017P00910000,NULL,0,0,0.02,Option,BUY,ToOpen,PUT,8/14/25 7:22 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,SFM,NULL,NULL,148.61,149.11,149.12,Stock,BUY,ToOpen,None,8/20/25 6:38 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,NULL,SFM250919C00150000,NULL,5.1,5.8,5.8,Option,BUY,ToOpen,CALL,8/20/25 6:38 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+36,Strategic Intelligence,BAH,NULL,NULL,110.78,111.19,111.19,Stock,BUY,ToOpen,None,8/22/25 7:08 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+36,Strategic Intelligence,NOC,NULL,NULL,596.87,598.31,530,Stock,BUY,ToOpen,None,8/22/25 7:08 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+36,Strategic Intelligence,LHX,NULL,NULL,276.65,277.18,250,Stock,BUY,ToOpen,None,8/22/25 7:08 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+36,Strategic Intelligence,AVAV,NULL,NULL,238.56,239.66,190,Stock,BUY,ToOpen,None,8/22/25 7:08 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+36,Strategic Intelligence,KTOS,NULL,NULL,65.3,65.53,53,Stock,BUY,ToOpen,None,8/22/25 7:08 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+18,Altuchers True Alpha,U,NULL,NULL,39.1,39.12,3.5,Stock,BUY,ToOpen,None,8/22/25 7:41 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+18,Altuchers True Alpha,NULL,U250829C00039500,NULL,1.45,1.51,1.53,Option,BUY,ToOpen,CALL,8/22/25 7:41 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+18,Altuchers True Alpha,NULL,U250829C00038000,NULL,2.23,2.29,2.31,Option,BUY,ToOpen,CALL,8/22/25 7:41 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+34,Insider Intel,BITF,BITF250919C00001500,,0.09,0.1,0.1,Option,BUY,ToOpen,CALL,8/22/25 4:14 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+34,Insider Intel,RIG,RIG251017C00003500,,0.15,0.16,0.16,Option,BUY,ToOpen,CALL,8/25/25 9:03 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+19,The Income Alliance,IWM,IWM251017C00220000,NULL,17.43,17.53,17.55,Option,BUY,ToOpen,CALL,8/26/25 7:14 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+20,Ray Blancos Catalyst Trader,ROIV,NULL,NULL,11.66,11.67,11.69,Stock,BUY,ToOpen,None,8/26/25 11:56 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+20,Ray Blancos Catalyst Trader,NULL,ROIV250919C00012000,NULL,0.35,0.45,0.45,Option,BUY,ToOpen,CALL,8/26/25 11:56 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,IBM,NULL,NULL,244.99,245.25,245.26,Stock,BUY,ToOpen,None,8/27/25 8:32 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,NULL,IBM250905C00247500,NULL,2.19,2.39,2.4,Option,BUY,ToOpen,CALL,8/27/25 8:32 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,NULL,IBM250905C00245000,NULL,3.35,3.55,3.6,Option,BUY,ToOpen,CALL,8/27/25 8:32 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,PGY,NULL,NULL,34.19,34.27,34.28,Stock,BUY,ToOpen,None,8/27/25 11:25 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,PGY250919C00035000,NULL,2.35,2.55,2.6,Option,BUY,ToOpen,CALL,8/27/25 11:25 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,PGY250919C00034000,NULL,2.75,3.1,3.15,Option,BUY,ToOpen,CALL,8/27/25 11:25 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+36,Strategic Intelligence,MPC,NULL,NULL,178.77,179.05,175,Stock,BUY,ToOpen,None,9/2/25 6:50 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+36,Strategic Intelligence,CRGY,NULL,NULL,9.54,9.56,9.56,Stock,BUY,ToOpen,None,9/2/25 6:50 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+36,Strategic Intelligence,RRC,NULL,NULL,34.04,34.09,34.09,Stock,BUY,ToOpen,None,9/2/25 6:50 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+17,Microcap Millionaire,SHLS,NULL,NULL,6.41,6.42,6.43,Stock,BUY,ToOpen,None,9/2/25 7:16 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+17,Microcap Millionaire,NULL,SHLS250919C00006000,NULL,0.6,0.7,0.7,Option,BUY,ToOpen,CALL,9/2/25 7:16 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+18,Altuchers True Alpha,CGNX,CGNX260220C00035000,NULL,10,10.2,10.2,Option,BUY,ToOpen,CALL,9/2/25 7:18 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+18,Altuchers True Alpha,CGNX,CGNX251121C00050000,NULL,0.95,1.05,1.1,Option,BUY,ToOpen,CALL,9/2/25 7:18 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+33,The Bear Cave,Part 3,NULL,Problems in Chinatown (Part 3),0,0,0.05,Stock,SELL,ToOpen,Unknown,9/4/25 7:31 AM,StockActivistShort,Substack,WebScrapeEmbeddedJs
+19,The Income Alliance,BX,BX251121C00160000,NULL,22.35,23.5,23.55,Option,BUY,ToOpen,CALL,9/10/25 7:25 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,AWK,NULL,NULL,138.42,138.47,138.48,Stock,BUY,ToOpen,None,9/10/25 10:35 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,AWK250919C00140000,NULL,1,1.5,1.55,Option,BUY,ToOpen,CALL,9/10/25 10:35 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,AWK250919C00135000,NULL,3.9,4.8,4.8,Option,BUY,ToOpen,CALL,9/10/25 10:35 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,VMEO,NULL,NULL,7.73,7.74,7.75,Stock,BUY,ToOpen,None,9/10/25 10:35 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,ABSI,NULL,NULL,2.49,2.5,2.51,Stock,BUY,ToOpen,None,9/10/25 10:35 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,ADBE,NULL,NULL,348.5,348.82,348.83,Stock,BUY,ToOpen,None,9/10/25 10:35 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,ADBE250919C00350000,NULL,18.2,18.7,18.7,Option,BUY,ToOpen,CALL,9/10/25 10:35 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,ADBE250919C00340000,NULL,23.1,23.55,23.6,Option,BUY,ToOpen,CALL,9/10/25 10:35 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,LWLG,NULL,NULL,3.2,3.21,3.22,Stock,BUY,ToOpen,None,9/10/25 10:36 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,S,NULL,NULL,17.88,17.89,17.9,Stock,BUY,ToOpen,None,9/10/25 10:36 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,S250919C00018000,NULL,0.4,0.45,0.45,Option,BUY,ToOpen,CALL,9/10/25 10:36 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,S250919C00017500,NULL,0.65,0.75,0.75,Option,BUY,ToOpen,CALL,9/10/25 10:36 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,PLAB,NULL,NULL,22.25,22.29,22.3,Stock,BUY,ToOpen,None,9/10/25 10:36 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,PLAB250919C00022500,NULL,0.4,0.5,0.5,Option,BUY,ToOpen,CALL,9/10/25 10:36 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,SMCI,NULL,NULL,44.28,44.3,44.31,Stock,BUY,ToOpen,None,9/10/25 10:36 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,SMCI250919C00044500,NULL,1.51,1.53,1.55,Option,BUY,ToOpen,CALL,9/10/25 10:36 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,SMCI250919C00043000,NULL,2.33,2.37,2.39,Option,BUY,ToOpen,CALL,9/10/25 10:36 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+19,The Income Alliance,BABA,BABA251121C00135000,NULL,20.85,21.1,21.15,Option,BUY,ToOpen,CALL,9/11/25 8:28 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+35,The Situation Report,BKRRF,NULL,NULL,0,0,0,Stock,BUY,ToOpen,None,9/12/25 9:21 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+19,The Income Alliance,TLT,TLT251121C00087000,NULL,4.2,4.3,4.3,Option,BUY,ToOpen,CALL,9/16/25 12:02 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+33,The Bear Cave,DKNG,NULL,Problems at DraftKings (DKNG),42.97,42.98,42.93,Stock,SELL,ToOpen,Unknown,9/18/25 7:31 AM,StockActivistShort,Substack,WebScrapeEmbeddedJs
+33,The Bear Cave,NULL,DKNG250926P00043000,NULL,0.97,1.16,1.16,Option,BUY,ToOpen,PUT,9/18/25 7:31 AM,StockActivistShort,Substack,WebScrapeEmbeddedJs
+17,Microcap Millionaire,SSYS,NULL,NULL,10.23,10.3,10.31,Stock,BUY,ToOpen,None,9/19/25 10:39 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+17,Microcap Millionaire,NULL,SSYS251017C00010000,NULL,0.65,0.9,0.9,Option,BUY,ToOpen,CALL,9/19/25 10:39 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+34,Insider Intel,UMAC,UMAC251121C00017500,,1.2,1.35,1.35,Option,BUY,ToOpen,CALL,9/22/25 7:05 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+35,The Situation Report,BOOM,NULL,NULL,7.67,7.75,7.75,Stock,BUY,ToOpen,None,9/22/25 7:47 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+35,The Situation Report,TTI,NULL,NULL,5.26,5.27,5.27,Stock,BUY,ToOpen,None,9/22/25 7:47 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+35,The Situation Report,WTTR,NULL,NULL,9.68,9.7,9.7,Stock,BUY,ToOpen,None,9/22/25 7:47 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,EAT,NULL,NULL,139.26,140.2,140.21,Stock,BUY,ToOpen,None,9/24/25 6:34 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,NULL,EAT251017C00140000,NULL,5.5,6.5,6.5,Option,BUY,ToOpen,CALL,9/24/25 6:34 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,RGEN,NULL,NULL,125.01,125.48,125.49,Stock,BUY,ToOpen,None,9/24/25 10:18 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+16,Paradigm Mastermind Group,NULL,RGEN251017C00125000,NULL,5.2,7,7,Option,BUY,ToOpen,CALL,9/24/25 10:18 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+20,Ray Blancos Catalyst Trader,CORT,NULL,NULL,82.6,82.88,82.9,Stock,BUY,ToOpen,None,9/25/25 7:00 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+20,Ray Blancos Catalyst Trader,NULL,CORT251121C00085000,NULL,5.2,7.1,7.1,Option,BUY,ToOpen,CALL,9/25/25 7:00 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+39,10X Trade Club,JD,JD251017C00040000,NULL,0.58,0.6,0.61,Option,BUY,ToOpen,CALL,9/25/25 8:02 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+39,10X Trade Club,RIVN,RIVN251121C00020000,NULL,0.58,0.59,0.6,Option,BUY,ToOpen,CALL,9/25/25 8:02 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+34,Insider Intel,XOM,XOM251121C00125000,,1.22,1.26,1.26,Option,BUY,ToOpen,CALL,9/26/25 6:49 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+38,Greg Gunther,XOM,XOM251121C00125000,BOUGHT SPY 7/31 639C 2.11 avg 1.43,1.46,1.5,1.51,Option,BUY,ToOpen,CALL,9/26/25 8:23 AM,ElmoStrategy,ElmoPlatform,WebScrapeViaJsMutation
+35,The Situation Report,IVOL,IVOL251219C00019000 ,NULL,1.3,1.85,0.95,Option,BUY,ToOpen,CALL,9/30/25 7:30 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+19,The Income Alliance,NVDA,NVDA251121C00170000,NULL,21.9,22.05,22.1,Option,BUY,ToOpen,CALL,9/30/25 10:26 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,BITX,NULL,NULL,57.11,57.12,57.13,Stock,BUY,ToOpen,None,10/1/25 6:41 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,NULL,BITX251010C00057500,NULL,2.22,2.31,2.32,Option,BUY,ToOpen,CALL,10/1/25 6:41 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,NULL,BITX251010C00057000,NULL,2.46,2.56,2.57,Option,BUY,ToOpen,CALL,10/1/25 6:41 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+39,10X Trade Club,NIO,NIO251121C00009000,NULL,0.46,0.48,0.49,Option,BUY,ToOpen,CALL,10/1/25 7:27 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+39,10X Trade Club,ABTC,ABTC251121C00007500,NULL,0.45,0.5,0.5,Option,BUY,ToOpen,CALL,10/1/25 7:27 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+39,10X Trade Club,AI,AI260116C00030000,NULL,0.82,0.85,0.86,Option,BUY,ToOpen,CALL,10/6/25 12:13 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+39,10X Trade Club,XYZ,XYZ251121C00095000,NULL,1.65,1.72,1.73,Option,BUY,ToOpen,CALL,10/7/25 7:17 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,YOU,NULL,NULL,30.12,30.22,30.23,Stock,BUY,ToOpen,None,10/8/25 6:50 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,NULL,YOU251017C00030000,NULL,0.9,1,1.05,Option,BUY,ToOpen,CALL,10/8/25 6:50 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+38,Greg Gunther,NIO,NIO251121C00009000,,0.44,0.46,0.47,Option,BUY,ToOpen,CALL,10/8/25 7:11 AM,ElmoStrategy,ElmoPlatform,WebScrapeViaJsMutation
+38,Greg Gunther,SOUN,SOUN251121C00025000,,1.61,1.62,1.63,Option,BUY,ToOpen,CALL,10/14/25 7:00 AM,ElmoStrategy,ElmoPlatform,WebScrapeViaJsMutation
+39,10X Trade Club,ACHR,ACHR260116C00015000,NULL,1.42,1.5,1.51,Option,BUY,ToOpen,CALL,10/14/25 8:01 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+39,10X Trade Club,UBER,UBER251121C00110000,NULL,1.08,1.17,1.18,Option,BUY,ToOpen,CALL,10/14/25 8:01 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+40,Altuchers Investment Network Pro,VOYG,NULL,NULL,35.53,35.66,35.66,Stock,BUY,ToOpen,None,10/14/25 12:23 PM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,RACE,NULL,NULL,381.83,382.04,382.05,Stock,BUY,ToOpen,None,10/15/25 6:45 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,NULL,RACE251121C00380000,NULL,18.3,19,19,Option,BUY,ToOpen,CALL,10/15/25 6:45 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,ETHT,NULL,NULL,81.92,82.11,82.12,Stock,BUY,ToOpen,None,10/16/25 6:28 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+33,The Bear Cave,BETCO,NULL,Problems at Better Collective A/S (BETCO),0,0,0.05,Stock,SELL,ToOpen,Unknown,10/16/25 7:30 AM,StockActivistShort,Substack,WebScrapeEmbeddedJs
+19,The Income Alliance,NOW,NOW251121P00970000,NULL,91.9,96.6,96.6,Option,BUY,ToOpen,PUT,10/16/25 10:45 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+39,10X Trade Club,SSYS,SSYS260116C00015000,NULL,0.25,0.6,0.6,Option,BUY,ToOpen,CALL,10/20/25 6:56 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+39,10X Trade Club,CGC,CGC260116C00020000,NULL,0.01,0.08,0.09,Option,BUY,ToOpen,CALL,10/20/25 6:56 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+17,Microcap Millionaire,DVLT,NULL,NULL,2.28,2.29,2.3,Stock,BUY,ToOpen,None,10/21/25 9:26 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,ALAB,NULL,NULL,155.04,156.5,156.51,Stock,BUY,ToOpen,None,10/22/25 6:37 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,NULL,ALAB251031C00157500,NULL,6.6,9.1,9.1,Option,BUY,ToOpen,CALL,10/22/25 6:37 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+37,The Maverick,NULL,ALAB251031C00155000,NULL,7.7,10.6,10.6,Option,BUY,ToOpen,CALL,10/22/25 6:37 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+39,10X Trade Club,BCH,NULL,NULL,32.94,32.96,32.96,Stock,BUY,ToOpen,None,10/22/25 9:28 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+39,10X Trade Club,RIG,RIG260116C00004000,NULL,0.36,0.37,0.38,Option,BUY,ToOpen,CALL,10/23/25 11:26 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+40,Altuchers Investment Network Pro,IREN,NULL,NULL,61.01,61.06,61.06,Stock,BUY,ToOpen,None,10/24/25 9:05 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+40,Altuchers Investment Network Pro,PSTG,NULL,NULL,94.4,94.55,94.55,Stock,BUY,ToOpen,None,10/24/25 9:05 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+40,Altuchers Investment Network Pro,ZBH,NULL,NULL,102.86,102.92,102.92,Stock,BUY,ToOpen,None,10/24/25 9:05 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+40,Altuchers Investment Network Pro,RCAT,NULL,NULL,11.05,11.07,11.07,Stock,BUY,ToOpen,None,10/24/25 9:05 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+40,Altuchers Investment Network Pro,EVLV,NULL,NULL,8.22,8.23,8.23,Stock,BUY,ToOpen,None,10/24/25 9:05 AM,ElmoStrategy,ElmoPlatform,ElmoCapture
+40,Altuchers Investment Network Pro,RXRX,NULL,NULL,5.9,5.91,5.91,Stock,BUY,ToOpen,None,10/24/25 9:05 AM,ElmoStrategy,ElmoPlatform,ElmoCapture

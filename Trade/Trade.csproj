@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\MSTest.TestAdapter.3.10.0\build\net462\MSTest.TestAdapter.props" Condition="Exists('..\packages\MSTest.TestAdapter.3.10.0\build\net462\MSTest.TestAdapter.props')" />
+  <Import Project="..\packages\Microsoft.Testing.Extensions.Telemetry.1.8.0\build\netstandard2.0\Microsoft.Testing.Extensions.Telemetry.props" Condition="Exists('..\packages\Microsoft.Testing.Extensions.Telemetry.1.8.0\build\netstandard2.0\Microsoft.Testing.Extensions.Telemetry.props')" />
+  <Import Project="..\packages\Microsoft.Testing.Platform.MSBuild.1.8.0\build\Microsoft.Testing.Platform.MSBuild.props" Condition="Exists('..\packages\Microsoft.Testing.Platform.MSBuild.1.8.0\build\Microsoft.Testing.Platform.MSBuild.props')" />
+  <Import Project="..\packages\Microsoft.Testing.Platform.1.8.0\build\netstandard2.0\Microsoft.Testing.Platform.props" Condition="Exists('..\packages\Microsoft.Testing.Platform.1.8.0\build\netstandard2.0\Microsoft.Testing.Platform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A7D9B6C5-BD3D-441C-A307-19C9C66A94DB}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Trade</RootNamespace>
+    <AssemblyName>Trade</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AWSSDK.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
+      <HintPath>..\packages\AWSSDK.Core.4.0.0.23\lib\net472\AWSSDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.S3, Version=4.0.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
+      <HintPath>..\packages\AWSSDK.S3.4.0.6.6\lib\net472\AWSSDK.S3.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=1.4.2.13, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.1.4.2\lib\netstandard2.0\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ILGPU, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ILGPU.1.5.3\lib\net471\ILGPU.dll</HintPath>
+    </Reference>
+    <Reference Include="ILGPU.Algorithms, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ILGPU.Algorithms.1.5.3\lib\net471\ILGPU.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.23.0.29, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.23.0\lib\net46\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Testing.Extensions.MSBuild, Version=1.8.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Testing.Platform.MSBuild.1.8.0\lib\netstandard2.0\Microsoft.Testing.Extensions.MSBuild.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Testing.Extensions.Telemetry, Version=1.8.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Testing.Extensions.Telemetry.1.8.0\lib\netstandard2.0\Microsoft.Testing.Extensions.Telemetry.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Testing.Extensions.TrxReport.Abstractions, Version=1.8.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Testing.Extensions.TrxReport.Abstractions.1.8.0\lib\netstandard2.0\Microsoft.Testing.Extensions.TrxReport.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Testing.Extensions.VSTestBridge, Version=1.8.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Testing.Extensions.VSTestBridge.1.8.0\lib\netstandard2.0\Microsoft.Testing.Extensions.VSTestBridge.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TestPlatform.AdapterUtilities, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.TestPlatform.AdapterUtilities.17.13.0\lib\net462\Microsoft.TestPlatform.AdapterUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TestPlatform.CoreUtilities, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.TestPlatform.ObjectModel.17.13.0\lib\net462\Microsoft.TestPlatform.CoreUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TestPlatform.PlatformAbstractions, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.TestPlatform.ObjectModel.17.13.0\lib\net462\Microsoft.TestPlatform.PlatformAbstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.ObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.TestPlatform.ObjectModel.17.13.0\lib\net462\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MSTest.TestFramework.3.10.0\lib\net462\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MSTest.TestFramework.3.10.0\lib\net462\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.7.0.0\lib\net462\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.5.0.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Metadata, Version=7.0.0.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reflection.Metadata.7.0.2\lib\net462\System.Reflection.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Text.Encodings.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.8.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=8.0.0.5, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.8.0.5\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcceleratorContext.cs" />
+    <Compile Include="BulkFileContractTracerDemo.cs" />
+    <Compile Include="Examples\DynamicPositionSizerDemo.cs" />
+    <Compile Include="Examples\CyclicalPriceDataDemo.cs" />
+    <Compile Include="Examples\EventTestRunner.cs" />
+    <Compile Include="Examples\IntradayLinearDataDemo.cs" />
+    <Compile Include="Examples\QuickScaleDemo.cs" />
+    <Compile Include="Form4\Enums\PositionType.cs" />
+    <Compile Include="Form4\Enums\TradeType.cs" />
+    <Compile Include="Form4\ExposureSnapshot.cs" />
+    <Compile Include="Form4\Form4Downloader.cs" />
+    <Compile Include="Form4\Form4IndexEntry.cs" />
+    <Compile Include="Form4\Form4Transaction.cs" />
+    <Compile Include="Form4\IndividualForm4Signal.cs" />
+    <Compile Include="Form4\PendingEntry.cs" />
+    <Compile Include="Form4\PnLSummary.cs" />
+    <Compile Include="Form4\Position.cs" />
+    <Compile Include="Form4\PriceActionMetrics.cs" />
+    <Compile Include="Form4\PriceDataPoint.cs" />
+    <Compile Include="Form4\SECHttpClient.cs" />
+    <Compile Include="Form4\SimplePnLTracker.cs" />
+    <Compile Include="Form4\Trade.cs" />
+    <Compile Include="GeneticIndividual.Indicators.Complex.cs" />
+    <Compile Include="GeneticIndividual.Indicators.Momentum.cs" />
+    <Compile Include="GeneticIndividual.Indicators.Specialized.cs" />
+    <Compile Include="GeneticIndividual.Indicators.Trend.cs" />
+    <Compile Include="GeneticIndividual.Indicators.Volatility.cs" />
+    <Compile Include="GeneticIndividual.Indicators.Volume.cs" />
+    <Compile Include="PerformanceTimer.cs" />
+    <Compile Include="IVPreCalc2\IVPreCalc.cs" />
+    <Compile Include="Polygon2\BulkDataSorter.cs" />
+    <Compile Include="Polygon2\ContractKeyComparer.cs" />
+    <Compile Include="Polygon2\TreeComparisonResult.cs" />
+    <Compile Include="Prices2\PriceRecordUtilities.cs" />
+    <Compile Include="Program.DataScience.cs" />
+    <Compile Include="Program.Settings.cs" />
+    <Compile Include="Program.TradeEventCapture.cs" />
+    <Compile Include="Program.TradeEventRecord.cs" />
+    <Compile Include="TestRunner.cs" />
+    <Compile Include="Tests\AccountingValidationTest.cs" />
+    <Compile Include="Caching\CacheKeyBuilder.cs" />
+    <Compile Include="Caching\DiskBackedMemoization.cs" />
+    <Compile Include="Caching\DiskCache.cs" />
+    <Compile Include="Caching\MemoizationDispatcher.cs" />
+    <Compile Include="Caching\MemoizationHelper.cs" />
+    <Compile Include="Caching\MemoizeAttribute.cs" />
+    <Compile Include="Caching\SlidingCache.cs" />
+    <Compile Include="ConsoleUtilities.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Examples\ParallelWindowOptimizerDemo.cs" />
+    <Compile Include="Fitness.cs" />
+    <Compile Include="GeneticIndividual.Constructors.cs" />
+    <Compile Include="GeneticIndividual.Fitness.cs" />
+    <Compile Include="GeneticIndividual.Indicators.cs" />
+    <Compile Include="GeneticIndividual.PositionSizing.cs" />
+    <Compile Include="GeneticIndividual.Signals.cs" />
+    <Compile Include="GeneticIndividual.Trading.cs" />
+    <Compile Include="Indicators\AcceleratorOscillator.cs" />
+    <Compile Include="Indicators\AccumulationDistribution.cs" />
+    <Compile Include="Indicators\AdxIndicator.cs" />
+    <Compile Include="Indicators\AdxWilderIndicator.cs" />
+    <Compile Include="DynamicPositionSizer.cs" />
+    <Compile Include="Indicators\ChaikinVolatility.cs" />
+    <Compile Include="OptionPriceSolver.cs" />
+    <Compile Include="Program.Core.cs" />
+    <Compile Include="Program.Display.cs" />
+    <Compile Include="Program.Optimization.cs" />
+    <Compile Include="Program.Utility.cs" />
+    <Compile Include="Program.Visualization.cs" />
+    <Compile Include="ProgramTypeSafeHooks.cs" />
+    <Compile Include="RiskMetrics.cs" />
+    <Compile Include="Tests\AnalyzeIndicatorRangesPerformanceTests.cs" />
+    <Compile Include="IVPreCalc2\BulkFileContractTracer.cs" />
+    <Compile Include="IVPreCalc2\BulkFilePointer.cs" />
+    <Compile Include="Tests\BuildSortedFileIndexingTests.cs" />
+    <Compile Include="Tests\BulkFileContractOrderingTests.cs" />
+    <Compile Include="Tests\BulkFileContractTracerTests.cs" />
+    <Compile Include="Tests\BulkFileContractTracerValidationTests.cs" />
+    <Compile Include="Tests\CachingTests.cs" />
+    <Compile Include="Tests\CalculateSignalsPerformanceTests.cs" />
+    <Compile Include="Tests\ChaikinVolatilityTests2.cs" />
+    <Compile Include="Form4\ClusterBuyAnalyzer.cs" />
+    <Compile Include="Tests\ConcurrentIndicatorProcessingTests.cs" />
+    <Compile Include="Tests\ConcurrentTradingIntegrationTests.cs" />
+    <Compile Include="IVPreCalc2\ContractFileAnalysis.cs" />
+    <Compile Include="IVPreCalc2\ContractOrderViolation.cs" />
+    <Compile Include="IVPreCalc2\ContractPriceHistory.cs" />
+    <Compile Include="IVPreCalc2\ContractPriceRecord.cs" />
+    <Compile Include="IVPreCalc2\ContractSearchStats.cs" />
+    <Compile Include="IVPreCalc2\ContractVerificationResult.cs" />
+    <Compile Include="Tests\ContractFileAnalysis.cs" />
+    <Compile Include="Tests\ContractKeyComparerTests.cs" />
+    <Compile Include="Tests\ContractOrderViolation.cs" />
+    <Compile Include="Tests\CyclicalPriceDataGeneratorTests.cs" />
+    <Compile Include="Tests\CyclicalPriceSeriesGenerator.cs" />
+    <Compile Include="IVPreCalc2\DailyContractPrice.cs" />
+    <Compile Include="Tests\DatasetComparisonTests.cs" />
+    <Compile Include="Tests\DeltaTradingTests.cs" />
+    <Compile Include="Tests\DynamicPositionSizerOptimizationDemoTests.cs" />
+    <Compile Include="Tests\DynamicPositionSizerPerformanceTests.cs" />
+    <Compile Include="Tests\EnvelopesTests2.cs" />
+    <Compile Include="Tests\ExecuteDeltaLogicCapitalUsageTests.cs" />
+    <Compile Include="Tests\FinalizationTests.cs" />
+    <Compile Include="Tests\FinalizationVerifier.cs" />
+    <Compile Include="Tests\FitnessTests2.cs" />
+    <Compile Include="Tests\ForceIndexTests2.cs" />
+    <Compile Include="Tests\FrAMATests2.cs" />
+    <Compile Include="Tests\GatorOscillatorTests2.cs" />
+    <Compile Include="Tests\GeneticIndividualAdditionalEdgeTests.cs" />
+    <Compile Include="Tests\GeneticIndividualConstructorsPerformanceTests.cs" />
+    <Compile Include="Tests\GeneticIndividualIndicatorsPerformanceTests.cs" />
+    <Compile Include="Tests\GeneticIndividualSignalsTests.cs" />
+    <Compile Include="Tests\GeneticIndividualTradingInternalMethodTests.cs" />
+    <Compile Include="Tests\GeneticSolverCrossoverTests.cs" />
+    <Compile Include="Tests\GEXTests.cs" />
+    <Compile Include="Tests\IchimokuTests2.cs" />
+    <Compile Include="Tests\IndicatorsNonZeroIntegrationTests.cs" />
+    <Compile Include="Tests\IndicatorValueCalibrator.cs" />
+    <Compile Include="Tests\IndicatorValueLogger.cs" />
+    <Compile Include="Tests\IntradayLinearDataGeneratorTests.cs" />
+    <Compile Include="Tests\IntradayVsDailyComparisonTests.cs" />
+    <Compile Include="Tests\JoinStockAndOptionsPriceFiles.cs" />
+    <Compile Include="Tests\LineNumberTrackingConsoleTest.cs" />
+    <Compile Include="Tests\LineNumberTrackingTests.cs" />
+    <Compile Include="Tests\ManualPerformanceTest.cs" />
+    <Compile Include="Tests\ManualTradeEventTest.cs" />
+    <Compile Include="Tests\MarkovPatternAnalysisTests.cs" />
+    <Compile Include="Tests\MassIndexTests2.cs" />
+    <Compile Include="Tests\Models\ContractVerificationInfo.cs" />
+    <Compile Include="Tests\Models\DeserializationResult.cs" />
+    <Compile Include="Tests\Models\IntegrityVerificationResult.cs" />
+    <Compile Include="Tests\Models\SerializableOptionData.cs" />
+    <Compile Include="Tests\Models\SerializableOptionsTree.cs" />
+    <Compile Include="Tests\Models\SerializationMetadata.cs" />
+    <Compile Include="Tests\Models\SerializationResult.cs" />
+    <Compile Include="Tests\Models\TreeLoadResult.cs" />
+    <Compile Include="Tests\Models\TreeMetadata.cs" />
+    <Compile Include="Tests\Models\VerificationDataset.cs" />
+    <Compile Include="Tests\Models\VerificationPoint.cs" />
+    <Compile Include="Tests\NewTradeEventsTests.cs" />
+    <Compile Include="Tests\OptionPricesIntegrationTests.cs" />
+    <Compile Include="Tests\IVPreCalcTests.cs" />
+    <Compile Include="Tests\OptionsPricesCalculusTest.cs" />
+    <Compile Include="Tests\OptionsPricesCompressionTest.cs" />
+    <Compile Include="Tests\OptionsPricesCompressionTestWithSerialization.cs" />
+    <Compile Include="Tests\OptionTradePriceRecordAssignmentTests.cs" />
+    <Compile Include="Tests\OsMATests2.cs" />
+    <Compile Include="Tests\ParabolicSARTests2.cs" />
+    <Compile Include="Tests\PriceChannelTests2.cs" />
+    <Compile Include="Tests\PriceRangePerformanceTests.cs" />
+    <Compile Include="Tests\PriceRangeQuickVerificationTests.cs" />
+    <Compile Include="Tests\PriceRangeTests.cs" />
+    <Compile Include="Tests\PriceRecordComparerPerformanceTests.cs" />
+    <Compile Include="Tests\ProgramDataSciencePerformanceTests.cs" />
+    <Compile Include="Tests\ProgramOptimizationPerformanceTests.cs" />
+    <Compile Include="Tests\ProperAccountingTests.cs" />
+    <Compile Include="Tests\RiskMetricsPerformanceTests.cs" />
+    <Compile Include="Tests\RSITests2.cs" />
+    <Compile Include="Tests\RVITests2.cs" />
+    <Compile Include="Tests\SECForm4DownloadTests2.cs" />
+    <Compile Include="Tests\SECForm4DownloadTests.cs" />
+    <Compile Include="Tests\SignalAggregationTests.cs" />
+    <Compile Include="Tests\SimpleFinalizationTest.cs" />
+    <Compile Include="Tests\SlidingCacheTests.cs" />
+    <Compile Include="Tests\StateManagementTests.cs" />
+    <Compile Include="Tests\TEMATests2.cs" />
+    <Compile Include="Tests\TestPriceDataFactory.cs" />
+    <Compile Include="Tests\TradeEventHandlingTests.cs" />
+    <Compile Include="Tests\UltimateOscillatorTests2.cs" />
+    <Compile Include="Tests\UnusualActivityTests.cs" />
+    <Compile Include="Tests\WalkForwardScoringPerformanceTests.cs" />
+    <Compile Include="Tests\WeightedRoundingBiasTests.cs" />
+    <Compile Include="Tests\WhatIfTests.cs" />
+    <Compile Include="Tests\WindowOptimizerPerformanceTests.cs" />
+    <Compile Include="Tests\WPRTests2.cs" />
+    <Compile Include="Polygon2\Polygon.FileMetadata.cs" />
+    <Compile Include="Polygon2\Polygon.HashingStream.cs" />
+    <Compile Include="Tests\ChaikinVolatilityTests.cs" />
+    <Compile Include="Indicators\ColorBars.cs" />
+    <Compile Include="Indicators\DEMA.cs" />
+    <Compile Include="Indicators\DeMarker.cs" />
+    <Compile Include="Indicators\DetrendedPriceOscillator.cs" />
+    <Compile Include="Indicators\Envelopes.cs" />
+    <Compile Include="Indicators\ForceIndex.cs" />
+    <Compile Include="Indicators\Fractals.cs" />
+    <Compile Include="Indicators\FrAMA.cs" />
+    <Compile Include="Tests\CreateDailyPriceRecordsFromCsv.cs" />
+    <Compile Include="Tests\EMAIndicatorTests.cs" />
+    <Compile Include="Tests\GeneticEvolversTests.cs" />
+    <Compile Include="Tests\GeneticIndividualPrivateTests.cs" />
+    <Compile Include="Tests\HashCodeTests.cs" />
+    <Compile Include="Tests\ImpliedVolatilitySolverTests2.cs" />
+    <Compile Include="Tests\RSIIndicatorTests.cs" />
+    <Compile Include="Tests\RVITests.cs" />
+    <Compile Include="Tests\FrAMATests.cs" />
+    <Compile Include="Indicators\GatorOscillator.cs" />
+    <Compile Include="Tests\ParabolicSARTests.cs" />
+    <Compile Include="Tests\MACDTests.cs" />
+    <Compile Include="Tests\S3FileSplitterComprehensiveTests.cs" />
+    <Compile Include="Tests\SinIndicatorTests.cs" />
+    <Compile Include="Tests\SMAIndicatorTests.cs" />
+    <Compile Include="Tests\TickerTests2.cs" />
+    <Compile Include="Tests\WindowOptimizerTests.cs" />
+    <Compile Include="Tests\WPRTests.cs" />
+    <Compile Include="Tests\EnvelopesTests.cs" />
+    <Compile Include="Tests\ForceIndexTests.cs" />
+    <Compile Include="Tests\MassIndexTests.cs" />
+    <Compile Include="Tests\OsMATests.cs" />
+    <Compile Include="Tests\PriceChannelTests.cs" />
+    <Compile Include="Tests\RSITests.cs" />
+    <Compile Include="Tests\IchimokuTests.cs" />
+    <Compile Include="Tests\GatorOscillatorTests.cs" />
+    <Compile Include="Indicators\HeikenAshi.cs" />
+    <Compile Include="Indicators\Ichimoku.cs" />
+    <Compile Include="Indicators\MACD.cs" />
+    <Compile Include="Indicators\MassIndex.cs" />
+    <Compile Include="Indicators\MFIIndicator.cs" />
+    <Compile Include="Indicators\Momentum.cs" />
+    <Compile Include="Indicators\OBV.cs" />
+    <Compile Include="Indicators\OsMA.cs" />
+    <Compile Include="Indicators\ParabolicSAR.cs" />
+    <Compile Include="Indicators\PriceChannel.cs" />
+    <Compile Include="Indicators\PVT.cs" />
+    <Compile Include="Indicators\ROC.cs" />
+    <Compile Include="Indicators\RSI.cs" />
+    <Compile Include="Indicators\RVI.cs" />
+    <Compile Include="Indicators\StdDev.cs" />
+    <Compile Include="Indicators\Stochastic.cs" />
+    <Compile Include="Indicators\TEMA.cs" />
+    <Compile Include="Indicators\TRIX.cs" />
+    <Compile Include="Indicators\UltimateOscillator.cs" />
+    <Compile Include="Indicators\VIDYA.cs" />
+    <Compile Include="Indicators\Volumes.cs" />
+    <Compile Include="Indicators\VROC.cs" />
+    <Compile Include="Indicators\WAD.cs" />
+    <Compile Include="Indicators\WPR.cs" />
+    <Compile Include="Indicators\ZigZag.cs" />
+    <Compile Include="Polygon2\HashCode.cs" />
+    <Compile Include="Polygon2\OptionRequest.cs" />
+    <Compile Include="Polygon2\OptionType.cs" />
+    <Compile Include="Polygon2\OptionRequestResult.cs" />
+    <Compile Include="Polygon2\MinuteDataResult.cs" />
+    <Compile Include="Polygon2\PolygonResult.cs" />
+    <Compile Include="Polygon2\PolygonResponse.cs" />
+    <Compile Include="Polygon2\S3DataDownloader.cs" />
+    <Compile Include="Polygon2\S3FileSplitter.cs" />
+    <Compile Include="Prices2\MultiSymbolPriceBook.cs" />
+    <Compile Include="Prices2\OHLC.cs" />
+    <Compile Include="Prices2\OptionPrices.cs" />
+    <Compile Include="Prices2\PriceRecord.cs" />
+    <Compile Include="Prices2\AggregatedPriceData.cs" />
+    <Compile Include="Indicators\AlligatorIndicator.cs" />
+    <Compile Include="Indicators\AmaIndicator.cs" />
+    <Compile Include="Indicators\AsiIndicator.cs" />
+    <Compile Include="Indicators\AtrIndicator.cs" />
+    <Compile Include="Indicators\AwesomeOscillator.cs" />
+    <Compile Include="Indicators\BearsPower.cs" />
+    <Compile Include="Indicators\BollingerBands.cs" />
+    <Compile Include="Indicators\BufferUtilities.cs" />
+    <Compile Include="Indicators\BullsPower.cs" />
+    <Compile Include="Indicators\BwZoneTrade.cs" />
+    <Compile Include="Indicators\CCIIndicator.cs" />
+    <Compile Include="Indicators\ChaikinOscillator.cs" />
+    <Compile Include="Examples\DemoEnhancedWindowOptimizer.cs" />
+    <Compile Include="Generate1DTradingGuides.cs" />
+    <Compile Include="GeneticEvolvers.cs" />
+    <Compile Include="GeneticIndividual.cs" />
+    <Compile Include="GeneticSolver.cs" />
+    <Compile Include="ImpliedVolatilitySolver.cs" />
+    <Compile Include="Interfaces\IImpliedVolatilitySolver.cs" />
+    <Compile Include="Interfaces\IOptionContract.cs" />
+    <Compile Include="Polygon2\Polygon.cs" />
+    <Compile Include="Examples\PolygonUsageExample.cs" />
+    <Compile Include="Prices2\Prices.cs" />
+    <Compile Include="Prices2\PriceRecordComparer.cs" />
+    <Compile Include="Program.BufferUtilities.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Indicators\SinIndicator.cs" />
+    <Compile Include="Polygon2\StockAndOptionsDataResult.cs" />
+    <Compile Include="Tests\AcceleratorOscillatorTests.cs" />
+    <Compile Include="Tests\AccumulationDistributionTests.cs" />
+    <Compile Include="Tests\AdxIndicatorTests.cs" />
+    <Compile Include="Tests\AdxWilderIndicatorTests.cs" />
+    <Compile Include="Tests\AggregatedPriceDataTests.cs" />
+    <Compile Include="Tests\AlligatorIndicatorTests.cs" />
+    <Compile Include="Tests\AmaIndicatorTests.cs" />
+    <Compile Include="Tests\AsiIndicatorTests.cs" />
+    <Compile Include="Tests\AtrIndicatorTests.cs" />
+    <Compile Include="Tests\AwesomeOscillatorTests.cs" />
+    <Compile Include="Tests\BearsPowerTests.cs" />
+    <Compile Include="Tests\BollingerBandsTests.cs" />
+    <Compile Include="Tests\BullsPowerTests.cs" />
+    <Compile Include="Tests\BwZoneTradeTests.cs" />
+    <Compile Include="Tests\CalculateSignalsTests.cs" />
+    <Compile Include="Tests\CCIIndicatorTests.cs" />
+    <Compile Include="Tests\ChaikinOscillatorTests.cs" />
+    <Compile Include="Tests\CodebaseSanityTests.cs" />
+    <Compile Include="Tests\ComprehensivePriceSystemTests.cs" />
+    <Compile Include="Tests\ComprehensiveTestSuiteSummary.cs" />
+    <Compile Include="Tests\ComprehensiveTestSuiteValidation.cs" />
+    <Compile Include="Tests\ConsoleUtilitiesTests.cs" />
+    <Compile Include="Tests\D1vsM1ValidationTests.cs" />
+    <Compile Include="Tests\DailyMarketHoursValidationTests.cs" />
+    <Compile Include="Tests\DataManagementTests.cs" />
+    <Compile Include="Tests\DeMarkerTests.cs" />
+    <Compile Include="Tests\DEMATests.cs" />
+    <Compile Include="Tests\DetrendedPriceOscillatorTests.cs" />
+    <Compile Include="Tests\DynamicPositionSizerTests.cs" />
+    <Compile Include="Tests\DynamicPositionSizingTests.cs" />
+    <Compile Include="Tests\EnhancedGeneticAlgorithmTests.cs" />
+    <Compile Include="Tests\EnhancedProgramAnalysisTests.cs" />
+    <Compile Include="Tests\EnhancedWindowOptimizerTests.cs" />
+    <Compile Include="Tests\ExclusiveEndDateValidationTests.cs" />
+    <Compile Include="Tests\FinalDollarGainTests.cs" />
+    <Compile Include="Tests\FractalsTests.cs" />
+    <Compile Include="Tests\GapBridgingTests.cs" />
+    <Compile Include="Tests\Generate1DTradingGuidesTests.cs" />
+    <Compile Include="Tests\GeneticIndividualAdvancedTests.cs" />
+    <Compile Include="Tests\GeneticIndividualEmaTests.cs" />
+    <Compile Include="Tests\GeneticIndividualLwmaTests.cs" />
+    <Compile Include="Tests\GeneticIndividualMaximalFitnessTests.cs" />
+    <Compile Include="Tests\GeneticIndividualSmaTests.cs" />
+    <Compile Include="Tests\GeneticIndividualSmmaTests.cs" />
+    <Compile Include="Tests\GeneticIndividualTests.cs" />
+    <Compile Include="Tests\GeneticSolverTests.cs" />
+    <Compile Include="Tests\HeikenAshiTests.cs" />
+    <Compile Include="Tests\ImpliedVolatilitySolverDataTests.cs" />
+    <Compile Include="Tests\ImpliedVolatilitySolverMathTests.cs" />
+    <Compile Include="Tests\ImpliedVolatilitySolverTests.cs" />
+    <Compile Include="Tests\ImpliedVolatilitySolverTests_Documentation.cs" />
+    <Compile Include="Tests\MarketFacilitationIndexTests.cs" />
+    <Compile Include="Tests\MarketHoursValidationTests.cs" />
+    <Compile Include="Tests\MomentumTests.cs" />
+    <Compile Include="Tests\OBVTests.cs" />
+    <Compile Include="Tests\OptionPricesTests.cs" />
+    <Compile Include="Tests\OptionPriceVerificationTests.cs" />
+    <Compile Include="Tests\OptionsPricesConcurrencyTests.cs" />
+    <Compile Include="Tests\OptionSymbolGenerationTests.cs" />
+    <Compile Include="Tests\OptionTradingTests.cs" />
+    <Compile Include="Tests\ParallelWindowOptimizerTests.cs" />
+    <Compile Include="Tests\PerformanceComparisonTests.cs" />
+    <Compile Include="Tests\PolygonTests.cs" />
+    <Compile Include="Tests\PolygonTests2.cs" />
+    <Compile Include="Tests\PositionSizingResultTests.cs" />
+    <Compile Include="Tests\PriceAggregationTests.cs" />
+    <Compile Include="Tests\ProgramAnalysisTests.cs" />
+    <Compile Include="Tests\PVTTests.cs" />
+    <Compile Include="Tests\ROCTests.cs" />
+    <Compile Include="Tests\S3FileSplitterTests.cs" />
+    <Compile Include="Tests\S3FileSplitterTests2.cs" />
+    <Compile Include="Tests\StdDevTests.cs" />
+    <Compile Include="Tests\StochasticTests.cs" />
+    <Compile Include="Tests\TEMATests.cs" />
+    <Compile Include="Tests\TestGenerate1DTradingGuides.cs" />
+    <Compile Include="Tests\TickerTests.cs" />
+    <Compile Include="Tests\TimeAdjustedPerformanceTests.cs" />
+    <Compile Include="Tests\TimezoneHandlingTests.cs" />
+    <Compile Include="Tests\TradeResultFixSummaryTests.cs" />
+    <Compile Include="Tests\TradeResultTests.cs" />
+    <Compile Include="Tests\TradeResultValidationTests.cs" />
+    <Compile Include="Tests\TRIXTests.cs" />
+    <Compile Include="Tests\UltimateOscillatorTests.cs" />
+    <Compile Include="Tests\VIDYATests.cs" />
+    <Compile Include="Tests\VolumesTests.cs" />
+    <Compile Include="Tests\VROCTests.cs" />
+    <Compile Include="Tests\WADTests.cs" />
+    <Compile Include="Tests\WeekendAwareGapAnalysisTests.cs" />
+    <Compile Include="Tests\ZigZagTests.cs" />
+    <Compile Include="Ticker.cs" />
+    <Compile Include="Examples\TickerExample.cs" />
+    <Compile Include="Prices2\TimeFrame.cs" />
+    <Compile Include="Prices2\ValidationResult.cs" />
+    <Compile Include="TradeResult.cs" />
+    <Compile Include="Utils\PriceRange.cs" />
+    <Compile Include="WalkForwardScoring.cs" />
+    <Compile Include="WindowOptimizer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Documentation\90_10_STRATEGY.md" />
+    <None Include="Documentation\AGGRESSIVE_FIXES_SUMMARY.md" />
+    <None Include="Documentation\Automated-Trading-Systems-Compliance-Guide.md" />
+    <None Include="Documentation\BASELINE_VALUE_GENERATION.md" />
+    <None Include="Coverage.json" />
+    <None Include="Data\SPY\O_SPY240808C00538000.zip" />
+    <None Include="Data\SPY\SPY_combined_us_options_opra_minute_aggs.csv" />
+    <None Include="Data\SPY\SPY_combined_us_stocks_sip_minute_aggs.csv" />
+    <None Include="Data\us_options_opra_minute_aggs\2025-02-03_us_options_opra_minute_aggs.zip" />
+    <None Include="Data\us_stocks_sip_minute_aggs\2024-08-14_us_stocks_sip_minute_aggs.zip" />
+    <None Include="Data\^spx_d.csv" />
+    <None Include="Data\^spx_d_for_options.csv" />
+    <None Include="Documentation\ContractAlignmentValidation.md" />
+    <None Include="Documentation\EnhancedContractValidation.md" />
+    <None Include="Documentation\EXCLUSIVE_END_DATE_REQUIREMENT.md" />
+    <None Include="Documentation\FIXES_APPLIED_SUMMARY.md" />
+    <None Include="Documentation\GeneticIndividualConstructors_OptimizationSummary.md" />
+    <None Include="Documentation\GeneticIndividualIndicators_OptimizationSummary.md" />
+    <None Include="Documentation\LEVERAGE_STRATEGY.md" />
+    <None Include="Documentation\MARKOV_BACKTEST_FIXES.md" />
+    <None Include="Documentation\MARKOV_IMPROVEMENTS.md" />
+    <None Include="Documentation\MARKOV_TRADING_IMPROVEMENTS.md" />
+    <None Include="Documentation\Overfitting_Fixes_Summary.md" />
+    <None Include="Documentation\ParsingLogicRobustness.md" />
+    <None Include="Documentation\PriceRecordComparer_OptimizationSummary.md" />
+    <None Include="Documentation\ProgramDataScience_OptimizationSummary.md" />
+    <None Include="Documentation\ProgramOptimization_OptimizationSummary.md" />
+    <None Include="Documentation\README.md" />
+    <None Include="Documentation\MARKET_HOURS_IMPLEMENTATION.md" />
+    <None Include="Documentation\DynamicPositionSizer_OptimizationSummary.md" />
+    <None Include="Documentation\README_IntradayLinearData.md" />
+    <None Include="Documentation\REGIME_FILTER_IMPLEMENTATION.md" />
+    <None Include="Documentation\RiskMetrics_OptimizationSummary.md" />
+    <None Include="Documentation\WalkForwardScoring_OptimizationSummary.md" />
+    <None Include="Documentation\WindowOptimizer_OptimizationSummary.md" />
+    <None Include="Documentation\INDICATOR_ORGANIZATION.md" />
+    <None Include="Documentation\OPTIMIZATION_IMPLEMENTATION_SUMMARY.md" />
+    <None Include="packages.config" />
+    <None Include="Documentation\PARALLEL_OPTIMIZATIONS.md" />
+    <None Include="Documentation\README_Polygon.md" />
+    <None Include="Documentation\README_S3.md" />
+    <None Include="Documentation\TIMEZONE_CONVERSION_IMPLEMENTATION.md" />
+    <Compile Include="Program.Debug.cs" />
+    <Compile Include="Program.Process.cs" />
+    <None Include="Documentation\CLUSTER_ANALYZER_IMPLEMENTATION.md" />
+    <None Include="Documentation\INDEX_CACHE_IMPLEMENTATION.md" />
+    <None Include="Documentation\PRICE_ACTION_IMPLEMENTATION.md" />
+    <None Include="Documentation\USAGE_GUIDE.md" />
+    <None Include="^spx_d.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="^spx_d_for_options.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PolygonConfig.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Analyzer Include="..\packages\AWSSDK.S3.4.0.6.6\analyzers\dotnet\cs\AWSSDK.S3.CodeAnalysis.dll" />
+    <Analyzer Include="..\packages\AWSSDK.S3.4.0.6.6\analyzers\dotnet\cs\SharedAnalysisCode.dll" />
+    <Analyzer Include="..\packages\MSTest.Analyzers.3.10.0\analyzers\dotnet\cs\MSTest.Analyzers.CodeFixes.dll" />
+    <Analyzer Include="..\packages\MSTest.Analyzers.3.10.0\analyzers\dotnet\cs\MSTest.Analyzers.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\MSTest.TestFramework.3.10.0\build\net462\MSTest.TestFramework.targets" Condition="Exists('..\packages\MSTest.TestFramework.3.10.0\build\net462\MSTest.TestFramework.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MSTest.TestFramework.3.10.0\build\net462\MSTest.TestFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestFramework.3.10.0\build\net462\MSTest.TestFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Testing.Platform.1.8.0\build\netstandard2.0\Microsoft.Testing.Platform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Testing.Platform.1.8.0\build\netstandard2.0\Microsoft.Testing.Platform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Testing.Platform.1.8.0\build\netstandard2.0\Microsoft.Testing.Platform.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Testing.Platform.1.8.0\build\netstandard2.0\Microsoft.Testing.Platform.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Testing.Platform.MSBuild.1.8.0\build\Microsoft.Testing.Platform.MSBuild.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Testing.Platform.MSBuild.1.8.0\build\Microsoft.Testing.Platform.MSBuild.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Testing.Platform.MSBuild.1.8.0\build\Microsoft.Testing.Platform.MSBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Testing.Platform.MSBuild.1.8.0\build\Microsoft.Testing.Platform.MSBuild.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Testing.Extensions.Telemetry.1.8.0\build\netstandard2.0\Microsoft.Testing.Extensions.Telemetry.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Testing.Extensions.Telemetry.1.8.0\build\netstandard2.0\Microsoft.Testing.Extensions.Telemetry.props'))" />
+    <Error Condition="!Exists('..\packages\MSTest.TestAdapter.3.10.0\build\net462\MSTest.TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.3.10.0\build\net462\MSTest.TestAdapter.props'))" />
+    <Error Condition="!Exists('..\packages\MSTest.TestAdapter.3.10.0\build\net462\MSTest.TestAdapter.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.3.10.0\build\net462\MSTest.TestAdapter.targets'))" />
+  </Target>
+  <Import Project="..\packages\Microsoft.Testing.Platform.1.8.0\build\netstandard2.0\Microsoft.Testing.Platform.targets" Condition="Exists('..\packages\Microsoft.Testing.Platform.1.8.0\build\netstandard2.0\Microsoft.Testing.Platform.targets')" />
+  <Import Project="..\packages\Microsoft.Testing.Platform.MSBuild.1.8.0\build\Microsoft.Testing.Platform.MSBuild.targets" Condition="Exists('..\packages\Microsoft.Testing.Platform.MSBuild.1.8.0\build\Microsoft.Testing.Platform.MSBuild.targets')" />
+  <Import Project="..\packages\MSTest.TestAdapter.3.10.0\build\net462\MSTest.TestAdapter.targets" Condition="Exists('..\packages\MSTest.TestAdapter.3.10.0\build\net462\MSTest.TestAdapter.targets')" />
+</Project>
